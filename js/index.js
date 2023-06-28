@@ -60,6 +60,11 @@ form.addEventListener('submit', (event)=>{
     closeImg.style.cursor = 'pointer';
     closeImg.style.transition = 'all 0.5s ease-in-out';
 
+    //Event réinitialisation des champs d'entrées
+    infoTitle.value = '';
+    infoAuthor.value = '';
+    infoImg.value = '';
+
     //Evenement on click sur closeImg pour remove la card
     closeImg.addEventListener('click', function() {
         item.remove();

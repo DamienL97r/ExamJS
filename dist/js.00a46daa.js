@@ -167,6 +167,11 @@ form.addEventListener('submit', function (event) {
   closeImg.style.cursor = 'pointer';
   closeImg.style.transition = 'all 0.5s ease-in-out';
 
+  //Event réinitialisation des champs d'entrées
+  infoTitle.value = '';
+  infoAuthor.value = '';
+  infoImg.value = '';
+
   //Evenement on click sur closeImg pour remove la card
   closeImg.addEventListener('click', function () {
     item.remove();
@@ -197,7 +202,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55341" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62189" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
