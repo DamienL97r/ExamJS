@@ -1,0 +1,94 @@
+/*STYLE GENERAL*/
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Belanosima ;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container-form{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.container-input > label {
+    margin-bottom: 10px;
+}
+
+.container-input > input {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.btn{
+    width: auto;
+    font-size: 1.5rem;
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(195, 195, 195);
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover{
+    background-color: rgb(61, 61, 61) ;
+    color: white;
+}
+
+
+/* CONTAINER BOOK */
+
+.container-book{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item{
+    position: relative;
+    width: 250px;
+    height: fit-content;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-img:hover{
+    scale: 1.1;
+}
+
+
+/*ANIMATION CARD*/
+
+@keyframes slide-in {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0.3;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+
+
+/*# sourceMappingURL=/style.78032849.css.map */
